@@ -1,0 +1,16 @@
+reset
+
+# numerator is the length of the plotted interval
+# denominator is the number of bins
+set boxwidth 8.0/50
+
+# nice density; ranges from 0 to 1
+set style fill solid .3	
+
+set yrange[0:.5]
+
+set key off
+set xlabel "x"
+set ylabel "P(X=x)"
+
+plot 'dist.dat' with boxes, "real.dat" with linespoints
