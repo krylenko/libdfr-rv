@@ -10,9 +10,7 @@
 #include <vector>
 #include <time.h>
 
-//#include "libdfr-matrix.h"
-
-#include "C:/Users/ghost/Desktop/robotics/code/dfrobot/matrix/libdfr-matrix.h"
+#include "../libdfr-matrix/libdfr-matrix.h"
 
 // note: could make this into a static class rather than just a group of methods
 

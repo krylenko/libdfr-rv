@@ -21,7 +21,7 @@ ACTION
 #include <time.h>
 
 #include "libdfr-rv.h"
-#include "../matrix/libdfr-matrix.h"
+#include "../libdfr-matrix/libdfr-matrix.h"
 
 #define FASTPOW 4294967296.		// 2^32 for fast division
 #define PI      3.14151926535897932
@@ -77,8 +77,8 @@ double p_x(const double& x)
 {
 	double p;
 	//p = 0.3*exp(-pow((x-0.3),2)) + 0.7* exp(-pow((x-2.),2)/0.3);	// test mixture from book
-	//p = 0.75*exp(-pow((x-2),2)/.22) + 1.5* exp(-pow((x-.1),2)/9);	// second test mixture
-	p = (1/sqrt(2*3.14159))*exp(-pow(x,2.)/2);											// simple 0,1 Gaussian
+    //p = 0.75*exp(-pow((x-2),2)/.22) + 1.5* exp(-pow((x-.1),2)/9);	// second test mixture
+    p = (1/sqrt(2*3.14159))*exp(-pow(x,2.)/2);											// simple 0,1 Gaussian
 	//p = 1./15.;													// uniform for 15 bins
 	return p;
 }
